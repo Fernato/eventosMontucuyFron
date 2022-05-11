@@ -1,6 +1,9 @@
 
 //Node.js
-const baseUrl = 'http://localhost:5000/api'
+//const baseUrl = 'http://localhost:5000/api'
+
+//Produccion
+const baseUrl = 'https://eventos-montucuy.herokuapp.com/api/'
 
 
 
