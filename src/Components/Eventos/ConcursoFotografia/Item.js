@@ -1,17 +1,17 @@
 import React from 'react'
 
-export const Item = ({imagen, titulo, lema, parrafo}) => {
+export const Item = ({imagePath, titulo, parrafo}) => {
   return (
-    <div className="card mb-3">
+    <div className="item">
         <div className="row g-0">
-          <div className="col-md-4">
-             <h5 className="card-title">{titulo}</h5>
+          <div className="row imagen">
+            <img src={imagePath} alt={imagePath} ></img>
           </div>
-          <div className="col-md-8">
+          <div className="row">
             <div className="card-body">
               
-              <p className="card-text">{lema}</p>
-              <p className="card-text"><small className="text-muted">{parrafo}</small></p>
+             <h5 className="itemtitulo">{titulo}</h5>
+              <p className="itemtext"><small className="text-muted">{parrafo}</small></p>
             </div>
           </div>
         </div>

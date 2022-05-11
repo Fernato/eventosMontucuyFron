@@ -4,7 +4,7 @@ import { Link} from 'react-router-dom'
 
 export const HomeScreen = () => {
 
-  const imagePath = '/assets/fotografia.jpg'
+  const imagePath = '/assets/Evento_Fotografia/fotografia.jpg'
   return (
     <div className='container'>
       

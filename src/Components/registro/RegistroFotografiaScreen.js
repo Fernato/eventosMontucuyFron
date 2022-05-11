@@ -3,7 +3,7 @@ import {FormRegistro} from '../registro/FormRegistro'
 
 export const RegistroFotografiaScreen = () => {
   return (
-    <div className='container'>
+    <div className='contenido'>
         <h1>Registro</h1>
         <FormRegistro />
     </div>
