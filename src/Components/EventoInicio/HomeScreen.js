@@ -15,6 +15,7 @@ export const HomeScreen = () => {
 
       <div className="row row-cols-1 row-cols-md-3 g-4">
         <div className="card">
+        <h3 className='card-title'>UNA IMAGEN NATURAL PARA COVEÑAS</h3>
           <img  className="card-img-top" src={imagePath} alt={imagePath} ></img>
           <div className="card-body">
             <h5 className="card-title">CONCURSO DE FOTOGRAFIA</h5>

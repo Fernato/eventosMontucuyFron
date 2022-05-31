@@ -10,7 +10,9 @@ export const types = {
 
     participanteAdd: '[Participante] Add Participante',
     
-    participanteGets: '[Participante] Gets Participante'
+    participanteGets: '[Participante] Gets Participante',
+
+    imagenParticipante: '[Imagen] getParticipante'
 
 
 }

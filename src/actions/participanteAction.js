@@ -1,7 +1,8 @@
-import { fetchSinToken } from "../helpers/fetch"
+import { fetchImagen, fetchSinToken } from "../helpers/fetch"
 import { types } from "../types/types"
 import { Cargado, Cargando } from "./carga"
 import Swal from "sweetalert2";
+import { imagenParticipante } from "./imagenAction";
 
 export const addNewParticipante = ( participante ) => {
 
@@ -25,11 +26,14 @@ export const addNewParticipante = ( participante ) => {
                       toast.addEventListener('mouseleave', Swal.resumeTimer)
                     }
                   })
+
+                  
                   
                   Toast.fire({
                     icon: 'success',
                     title: 'Registro Exitoso'
                   })
+                  dispatch(imagenParticipante(body.participante))
                 dispatch(addParticipante(participante))
                 
           
@@ -49,6 +53,10 @@ export const addNewParticipante = ( participante ) => {
     }
 
 }
+
+
+
+
 
 const addParticipante = ( participante ) => ({
     type: types.participanteAdd,

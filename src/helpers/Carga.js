@@ -1,6 +1,6 @@
 import Modal from 'react-modal';
 import { useDispatch, useSelector } from 'react-redux';
-import { Cargado, Cerrado } from '../actions/carga';
+import { Cargado } from '../actions/carga';
 
 
 
